@@ -2,7 +2,7 @@
 
 namespace Dot\WordPress\Theme;
 
-use Dot\WordPress\Page as AbstractPage;
+use Dot\WordPress\Page\Page as AbstractPage;
 
 !defined( 'WPINC ' ) or die;
 

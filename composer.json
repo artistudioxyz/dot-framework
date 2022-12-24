@@ -4,7 +4,7 @@
     "license": "Copyright Artistudio.xyz",
     "autoload": {
         "psr-4": {
-            "Dot\\Wordpress\\": "src/"
+            "Dot\\": "src/"
         }
     },
     "authors": [
