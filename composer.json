@@ -1,0 +1,17 @@
+{
+    "name": "artistudioxyz/dot-framework",
+    "description": "a Simple WordPress Utility Library for building better Plugins and Themes.",
+    "license": "Copyright Artistudio.xyz",
+    "autoload": {
+        "psr-4": {
+            "Dot\\Wordpress\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Agung Sundoro",
+            "email": "muhagung2001@gmail.com"
+        }
+    ],
+    "require": {}
+}
