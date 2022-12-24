@@ -1,11 +1,12 @@
 {
     "name": "artistudioxyz/dot-framework",
-    "description": "a Simple WordPress Utility Library for building better Plugins and Themes.",
-    "license": "Copyright Artistudio.xyz",
-    "autoload": {
-        "psr-4": {
-            "Dot\\": "src/"
-        }
+    "description": "Simple WordPress Utility Library for building better Plugins and Themes.",
+    "license": "Copyright ArtiStudio.xyz",
+    "autoload"		: {
+        "classmap":[
+            "src/Framework",
+            "src/WordPress"
+        ]
     },
     "authors": [
         {
