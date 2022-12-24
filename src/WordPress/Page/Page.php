@@ -1,13 +1,14 @@
 <?php
 
-namespace Dot\WordPress;
+namespace Dot\Wordpress\Page;
 
 !defined( 'WPINC ' ) or die;
 
 /**
- * Create custom page for WordPress
+ * Create custom page for wordpress
  *
  * @package    Dot
+ * @subpackage Dot\Includes\Wordpress
  */
 
 abstract class Page {
