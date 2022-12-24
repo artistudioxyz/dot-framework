@@ -135,7 +135,7 @@ class Theme {
         $this->Form        = new Form();
         $this->WP          = new \Dot\WordPress\Helper();
         /** Init Config */
-        $this->config->path = explode( '/', dirname( __DIR__, 2 ) );
+        $this->config->path = explode( '/', dirname( __DIR__, 5 ) );
         $this->config->path = implode( '/', $this->config->path ) . '/' . end( $this->config->path ) . '.php';
         $this->config->options = $this->WP->get_option( 'dot_config' );
         $this->config->options = ( $this->config->options ) ? $this->config->options : new \stdClass();
@@ -146,7 +146,7 @@ class Theme {
      * Get Theme Config
      */
     public function getThemeConfig() {
-        $config = dirname( __DIR__, 2 );
+        $config = dirname( __DIR__, 5 );
         $config = file_get_contents( $config . '/config.json' );
         $config = json_decode( $config );
         return $config;
