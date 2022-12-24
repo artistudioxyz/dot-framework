@@ -1,6 +1,6 @@
 <?php
 
-namespace Dot\Wordpress\Customizer;
+namespace Dot\WordPress\Customizer;
 
 !defined( 'WPINC ' ) or die;
 
@@ -8,7 +8,7 @@ namespace Dot\Wordpress\Customizer;
  * Register all actions
  *
  * @package    Dot
- * @subpackage Dot\Includes\Wordpress
+ * @subpackage Dot\Includes\WordPress
  */
 
 class Section extends Customizer {

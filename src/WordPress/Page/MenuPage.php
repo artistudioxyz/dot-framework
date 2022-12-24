@@ -1,6 +1,6 @@
 <?php
 
-namespace Dot\Wordpress\Page;
+namespace Dot\WordPress\Page;
 
 !defined( 'WPINC ' ) or die;
 
@@ -8,7 +8,7 @@ namespace Dot\Wordpress\Page;
  * Create custom page for wordpress
  *
  * @package    Dot
- * @subpackage Dot\Includes\Wordpress
+ * @subpackage Dot\Includes\WordPress
  */
 
 class MenuPage extends Page {

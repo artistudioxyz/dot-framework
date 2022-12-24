@@ -133,9 +133,9 @@ class Plugin {
         $this->models      = array();
         $this->Helper      = new Helper();
         $this->Form        = new Form();
-        $this->WP          = new \Dot\Wordpress\Helper();
+        $this->WP          = new \Dot\WordPress\Helper();
         /** Init Config */
-        $this->config->path = explode( '/', dirname( __DIR__, 2 ) );
+        $this->config->path = explode( '/', dirname( __DIR__, 5 ) );
         $this->config->path = implode( '/', $this->config->path ) . '/' . end( $this->config->path ) . '.php';
         $this->config->options = $this->WP->get_option( 'dot_config' );
         $this->config->options = ( $this->config->options ) ? $this->config->options : new \stdClass();
@@ -146,7 +146,7 @@ class Plugin {
      * Get Plugin Config
      */
     public function getPluginConfig() {
-        $config = dirname( __DIR__, 2 );
+        $config = dirname( __DIR__, 5 );
         $config = file_get_contents( $config . '/config.json' );
         $config = json_decode( $config );
         return $config;
@@ -203,7 +203,7 @@ class Plugin {
             /** Run Hooks */
             $this->models[ $name ] = $model;
             foreach ( $model->getHooks() as $hook ) {
-                $class = str_replace( 'Dot\\Wordpress\\Hook\\', '', get_class( $hook ) );
+                $class = str_replace( 'Dot\\WordPress\\Hook\\', '', get_class( $hook ) );
                 if ( in_array( strtolower( $class ), $this->enableHooks ) ) {
                     $hook->run();
                 }
@@ -291,7 +291,7 @@ class Plugin {
                 $this->apis[ $name ] = $controller;
             }
             foreach ( $controller->getHooks() as $hook ) {
-                $class = str_replace( 'Dot\\Wordpress\\Hook\\', '', get_class( $hook ) );
+                $class = str_replace( 'Dot\\WordPress\\Hook\\', '', get_class( $hook ) );
                 if ( in_array( strtolower( $class ), $this->enableHooks ) ) {
                     $namespace    = ( new \ReflectionClass( $hook->getComponent() ) )->getNamespaceName();
                     $namespaceKey = str_replace( '\\', '_', strtolower( $namespace ) );
@@ -528,14 +528,14 @@ class Plugin {
     /**
      * @return object
      */
-    public function getWP(): Wordpress\Helper {
+    public function getWP(): WordPress\Helper {
         return $this->WP;
     }
 
     /**
      * @param object $WP
      */
-    public function setWP( Wordpress\Helper $WP ): void {
+    public function setWP( WordPress\Helper $WP ): void {
         $this->WP = $WP;
     }
 
