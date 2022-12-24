@@ -1,4 +1,4 @@
-# DOT Framework
+# 🟣 DOT Framework
 
 a Simple WordPress Utility Library for building better Plugins and Themes.
 
