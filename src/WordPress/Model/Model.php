@@ -1,14 +1,14 @@
 <?php
 
-namespace BingoPress\WordPress\Model;
+namespace Dot\WordPress\Model;
 
 ! defined( 'WPINC ' ) || die;
 
 /**
  * Abstract class for WordPress model
  *
- * @package    BingoPress
- * @subpackage BingoPress\Includes\WordPress
+ * @package    Dot
+ * @subpackage Dot\Includes\WordPress
  */
 
 abstract class Model {

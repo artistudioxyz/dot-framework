@@ -1,14 +1,14 @@
 <?php
 
-namespace BingoPress\Helper;
+namespace Dot\Helper;
 
 !defined( 'WPINC ' ) or die;
 
 /**
- * Helper library for BingoPress framework
+ * Helper library for Dot framework
  *
- * @package    BingoPress
- * @subpackage BingoPress\Includes
+ * @package    Dot
+ * @subpackage Dot\Includes
  */
 
 trait Plan {
@@ -24,9 +24,9 @@ trait Plan {
         $plan = $this->Theme->getConfig()->premium;
 
         /** Freemius - Check Premium Plan */
-        if(function_exists('bingopress_freemius')){
-            if(bingopress_freemius()->is__premium_only()){
-                if(bingopress_freemius()->is_plan('pro')) $plan = 'pro';
+        if(function_exists('dot_freemius')){
+            if(dot_freemius()->is__premium_only()){
+                if(dot_freemius()->is_plan('pro')) $plan = 'pro';
             }
         }
 
@@ -38,8 +38,8 @@ trait Plan {
      * @return string
      */
     public function getUpgradeURL(){
-        return (function_exists('bingopress_freemius')) ?
-            bingopress_freemius()->get_upgrade_url() : false;
+        return (function_exists('dot_freemius')) ?
+            dot_freemius()->get_upgrade_url() : false;
     }
 
 }

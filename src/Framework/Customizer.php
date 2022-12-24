@@ -1,14 +1,14 @@
 <?php
 
-namespace BingoPress\Controller;
+namespace Dot\Controller;
 
 !defined( 'WPINC ' ) or die;
 
 /**
  * Initiate framework
  *
- * @package    BingoPress
- * @subpackage BingoPress/Controller
+ * @package    Dot
+ * @subpackage Dot/Controller
  */
 
 class Customizer extends Base {

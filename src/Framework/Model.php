@@ -1,17 +1,17 @@
 <?php
 
-namespace BingoPress\Model;
+namespace Dot\Model;
 
 !defined( 'WPINC ' ) or die;
 
 /**
  * Initiate framework
  *
- * @package    BingoPress
- * @subpackage BingoPress/Model
+ * @package    Dot
+ * @subpackage Dot/Model
  */
 
-use BingoPress\WordPress\Model\Type;
+use Dot\WordPress\Model\Type;
 
 class Model extends Type {
 

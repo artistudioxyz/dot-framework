@@ -1,14 +1,14 @@
 <?php
 
-namespace BingoPress;
+namespace Dot;
 
 ! defined( 'WPINC ' ) || die;
 
 /**
  * Initiate theme
  *
- * @package    BingoPress
- * @subpackage BingoPress\Includes
+ * @package    Dot
+ * @subpackage Dot\Includes
  */
 
 class Theme {
@@ -133,11 +133,11 @@ class Theme {
         $this->models      = array();
         $this->Helper      = new Helper();
         $this->Form        = new Form();
-        $this->WP          = new \BingoPress\WordPress\Helper();
+        $this->WP          = new \Dot\WordPress\Helper();
         /** Init Config */
         $this->config->path = explode( '/', dirname( __DIR__, 2 ) );
         $this->config->path = implode( '/', $this->config->path ) . '/' . end( $this->config->path ) . '.php';
-        $this->config->options = $this->WP->get_option( 'bingopress_config' );
+        $this->config->options = $this->WP->get_option( 'dot_config' );
         $this->config->options = ( $this->config->options ) ? $this->config->options : new \stdClass();
         $this->path = $this->generatePath( $this->config->path );
     }
@@ -192,7 +192,7 @@ class Theme {
                 continue;
             }
             $name  = basename( $model, '.php' );
-            $model = '\\BingoPress\\Model\\' . $name;
+            $model = '\\Dot\\Model\\' . $name;
             $model = new $model( $this );
             /** Build */
             $args          = $model->getArgs();
@@ -203,7 +203,7 @@ class Theme {
             /** Run Hooks */
             $this->models[ $name ] = $model;
             foreach ( $model->getHooks() as $hook ) {
-                $class = str_replace( 'BingoPress\\WordPress\\Hook\\', '', get_class( $hook ) );
+                $class = str_replace( 'Dot\\WordPress\\Hook\\', '', get_class( $hook ) );
                 if ( in_array( strtolower( $class ), $this->enableHooks ) ) {
                     $hook->run();
                 }
@@ -225,7 +225,7 @@ class Theme {
                 continue;
             }
             $name                                 = basename( $feature, '.php' );
-            $feature                              = '\\BingoPress\\Feature\\' . $name;
+            $feature                              = '\\Dot\\Feature\\' . $name;
             $feature                              = new $feature( $this );
             $this->features[ $feature->getKey() ] = $feature;
             if( method_exists($feature, 'loadHooks') ) {
@@ -241,10 +241,10 @@ class Theme {
     public function loadModulesHooks(){
         $modules = [];
         $allow = array( '.', '..', '.DS_Store', 'index.php' );
-        foreach($this->Helper->getDirFiles( $this->path['framework_path'] . 'src/Helper/BingoPressModule' ) as $module){
+        foreach($this->Helper->getDirFiles( $this->path['framework_path'] . 'src/Helper/DotModule' ) as $module){
             if ( in_array( basename( $module ), $allow ) ) continue;
             $name = basename( $module, '.php' );
-            $class = '\\BingoPress\\Module\\' . $name;
+            $class = '\\Dot\\Module\\' . $name;
             if( method_exists($class, 'loadHooks') ) {
                 $modules[ $name ] = new $class();
                 foreach ( $modules[ $name ]->getHooks() as $hook ) { $hook->run(); }
@@ -253,15 +253,15 @@ class Theme {
     }
 
     /**
-     * Get BingoPress Modules
+     * Get Dot Modules
      */
     public function getModules(){
         $modules = [];
         $allow = array( '.', '..', '.DS_Store', 'index.php' );
-        foreach($this->Helper->getDirFiles( $this->path['framework_path'] . 'src/Helper/BingoPressModule' ) as $module){
+        foreach($this->Helper->getDirFiles( $this->path['framework_path'] . 'src/Helper/DotModule' ) as $module){
             if ( in_array( basename( $module ), $allow ) ) continue;
             $name = basename( $module, '.php' );
-            $class = '\\BingoPress\\Module\\' . $name;
+            $class = '\\Dot\\Module\\' . $name;
             $modules[ $name ] = new $class();
         }
         return $modules;
@@ -282,7 +282,7 @@ class Theme {
                 continue;
             }
             $name       = basename( $controller, '.php' );
-            $controller = '\\BingoPress\\' . ucwords( $dir ) . '\\' . $name;
+            $controller = '\\Dot\\' . ucwords( $dir ) . '\\' . $name;
             $controller = new $controller( $this );
             if ( $dir === 'Controller' ) {
                 $this->controllers[ $name ] = $controller;
@@ -291,14 +291,14 @@ class Theme {
                 $this->apis[ $name ] = $controller;
             }
             foreach ( $controller->getHooks() as $hook ) {
-                $class = str_replace( 'BingoPress\\WordPress\\Hook\\', '', get_class( $hook ) );
+                $class = str_replace( 'Dot\\WordPress\\Hook\\', '', get_class( $hook ) );
                 if ( in_array( strtolower( $class ), $this->enableHooks ) ) {
                     $namespace    = ( new \ReflectionClass( $hook->getComponent() ) )->getNamespaceName();
                     $namespaceKey = str_replace( '\\', '_', strtolower( $namespace ) );
                     $hookName     = preg_replace( '/[^A-Za-z0-9_]/', '', strtolower( $hook->getHook() ) );
                     $callbackName = preg_replace( '/[^A-Za-z0-9_]/', '', strtolower( $hook->getCallback() ) );
                     $key          = sprintf( 'hooks_%s_%s_%s_%s', $namespaceKey, strtolower( $name ), $hookName, $callbackName );
-                    $status       = ( isset( $this->config->options->bingopress_hooks->$key ) ) ? $this->config->options->bingopress_hooks->$key : $hook->isStatus(); // Option Exists
+                    $status       = ( isset( $this->config->options->dot_hooks->$key ) ) ? $this->config->options->dot_hooks->$key : $hook->isStatus(); // Option Exists
                     $status       = ( $status==='true' || $status=='1' ) ? true : false; // Grab option status
                     if ( $status == false && ! $hook->isMandatory() ) {
                         continue; // Check theme isMandatory
@@ -336,7 +336,7 @@ class Theme {
                 (array) $this->config->default,
                 (array) $this->config->options
             );
-            $this->WP->update_option( 'bingopress_config', (object) $config );
+            $this->WP->update_option( 'dot_config', (object) $config );
             $this->config->options = (object) $config;
         }
     }

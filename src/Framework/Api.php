@@ -1,17 +1,17 @@
 <?php
 
-namespace BingoPress\Api;
+namespace Dot\Api;
 
 !defined( 'WPINC ' ) or die;
 
 /**
  * Initiate framework
  *
- * @package    BingoPress
- * @subpackage BingoPress/Controller
+ * @package    Dot
+ * @subpackage Dot/Controller
  */
 
-use BingoPress\Controller\Controller;
+use Dot\Controller\Controller;
 
 class Api extends Controller {
 

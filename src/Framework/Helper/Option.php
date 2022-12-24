@@ -1,6 +1,6 @@
 <?php
 
-namespace BingoPress\Helper;
+namespace Dot\Helper;
 
 !defined( 'WPINC ' ) or die;
 

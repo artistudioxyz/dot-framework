@@ -1,14 +1,14 @@
 <?php
 
-namespace BingoPress;
+namespace Dot;
 
 !defined( 'WPINC ' ) or die;
 
 /**
- * Helper library for BingoPress framework
+ * Helper library for Dot framework
  *
- * @package    BingoPress
- * @subpackage BingoPress\Includes
+ * @package    Dot
+ * @subpackage Dot\Includes
  */
 
 class Helper {

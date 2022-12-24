@@ -1,13 +1,13 @@
 <?php
 
-namespace BingoPress\WordPress;
+namespace Dot\WordPress;
 
 !defined( 'WPINC ' ) or die;
 
 /**
  * Create custom page for WordPress
  *
- * @package    BingoPress
+ * @package    Dot
  */
 
 abstract class Page {

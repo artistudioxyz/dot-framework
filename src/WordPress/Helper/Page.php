@@ -1,17 +1,17 @@
 <?php
 
-namespace BingoPress\WordPress\Helper;
+namespace Dot\WordPress\Helper;
 
 ! defined( 'WPINC ' ) or die;
 
 /**
  * Add extra layer for WordPress functions
  *
- * @package    BingoPress
- * @subpackage BingoPress\WordPress
+ * @package    Dot
+ * @subpackage Dot\WordPress
  */
 
-use BingoPress\View;
+use Dot\View;
 
 trait Page {
 

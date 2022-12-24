@@ -1,14 +1,14 @@
 <?php
 
-namespace BingoPress\WordPress\Model;
+namespace Dot\WordPress\Model;
 
 !defined( 'WPINC ' ) or die;
 
 /**
  * Abstract class for WordPress model
  *
- * @package    BingoPress
- * @subpackage BingoPress\Includes\WordPress
+ * @package    Dot
+ * @subpackage Dot\Includes\WordPress
  */
 
 
@@ -24,7 +24,7 @@ class Taxonomy extends Model {
      * Metadata constructor
      */
     public function __construct(){
-        $this->WP = new \BingoPress\WordPress\Helper();
+        $this->WP = new \Dot\WordPress\Helper();
     }
 
     /**

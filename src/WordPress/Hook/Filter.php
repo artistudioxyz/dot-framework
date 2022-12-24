@@ -1,14 +1,14 @@
 <?php
 
-namespace BingoPress\WordPress\Hook;
+namespace Dot\WordPress\Hook;
 
 !defined( 'WPINC ' ) or die;
 
 /**
  * Abstract class for hook
  *
- * @package    BingoPress
- * @subpackage BingoPress\Includes\WordPress
+ * @package    Dot
+ * @subpackage Dot\Includes\WordPress
  */
 
 class Filter extends Hook {

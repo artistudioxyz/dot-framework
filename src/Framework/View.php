@@ -1,14 +1,14 @@
 <?php
 
-namespace BingoPress;
+namespace Dot;
 
 ! defined( 'WPINC ' ) or die;
 
 /**
  * Helper library for Dot Framework
  *
- * @package    BingoPress
- * @subpackage BingoPress\Includes
+ * @package    Dot
+ * @subpackage Dot\Includes
  */
 
 class View {
@@ -57,7 +57,7 @@ class View {
 	 * @return void
 	 */
 	public function __construct( ) {
-        $theme = \BingoPress\Theme::getInstance();
+        $theme = \Dot\Theme::getInstance();
 		$this->Theme  = $theme;
 		$this->Helper  = ( method_exists( $theme, 'getHelper' ) ) ? $theme->getHelper() : '';
 		$this->WP      = ( method_exists( $theme, 'getWP' ) ) ? $theme->getWP() : '';

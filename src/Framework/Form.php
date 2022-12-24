@@ -1,17 +1,17 @@
 <?php
 
-namespace BingoPress;
+namespace Dot;
 
 !defined( 'WPINC ' ) or die;
 
 /**
- * Helper library for BingoPress theme
+ * Helper library for Dot theme
  *
- * @package    BingoPress
- * @subpackage BingoPress\Includes
+ * @package    Dot
+ * @subpackage Dot\Includes
  */
 
-use BingoPress\View;
+use Dot\View;
 
 class Form {
 

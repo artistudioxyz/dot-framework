@@ -1,14 +1,14 @@
 <?php
 
-namespace BingoPress\Controller;
+namespace Dot\Controller;
 
 ! defined( 'WPINC ' ) or die;
 
 /**
  * Initiate framework
  *
- * @package    BingoPress
- * @subpackage BingoPress/Controller
+ * @package    Dot
+ * @subpackage Dot/Controller
  */
 
 class Controller {
@@ -26,7 +26,7 @@ class Controller {
 	 * @param    object $theme     Framework configuration
 	 * @pattern prototype
 	 */
-	public function __construct( \BingoPress\Theme $theme ) {
+	public function __construct( \Dot\Theme $theme ) {
 		$this->Theme = $theme;
 		$this->Helper = $theme->getHelper();
 		$this->WP     = $theme->getWP();

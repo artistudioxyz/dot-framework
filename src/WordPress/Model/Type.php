@@ -1,16 +1,16 @@
 <?php
 
-namespace BingoPress\WordPress\Model;
+namespace Dot\WordPress\Model;
 
-use BingoPress\WordPress\Hook\Action;
+use Dot\WordPress\Hook\Action;
 
 !defined( 'WPINC ' ) or die;
 
 /**
  * Abstract class for WordPress model
  *
- * @package    BingoPress
- * @subpackage BingoPress\Includes\WordPress
+ * @package    Dot
+ * @subpackage Dot\Includes\WordPress
  */
 
 
@@ -43,8 +43,8 @@ class Type extends Model {
     /**
      * Metadata constructor
      */
-    public function __construct(\BingoPress\Theme $theme){
-        $this->WP = new \BingoPress\WordPress\Helper();
+    public function __construct(\Dot\Theme $theme){
+        $this->WP = new \Dot\WordPress\Helper();
         $this->Theme = $theme;
     }
 

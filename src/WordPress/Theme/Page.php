@@ -1,16 +1,16 @@
 <?php
 
-namespace BingoPress\WordPress\Theme;
+namespace Dot\WordPress\Theme;
 
-use BingoPress\WordPress\Page as AbstractPage;
+use Dot\WordPress\Page as AbstractPage;
 
 !defined( 'WPINC ' ) or die;
 
 /**
  * Create custom page for WordPress
  *
- * @package    BingoPress
- * @subpackage BingoPress\Includes\WordPress
+ * @package    Dot
+ * @subpackage Dot\Includes\WordPress
  */
 
 class Page extends AbstractPage {

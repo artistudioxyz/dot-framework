@@ -1,14 +1,14 @@
 <?php
 
-namespace BingoPress\WordPress\Model;
+namespace Dot\WordPress\Model;
 
 !defined( 'WPINC ' ) or die;
 
 /**
  * Initiate framework
  *
- * @package    BingoPress
- * @subpackage BingoPress/Controller
+ * @package    Dot
+ * @subpackage Dot/Controller
  */
 
 class MetaBox {

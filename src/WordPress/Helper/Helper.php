@@ -1,14 +1,14 @@
 <?php
 
-namespace BingoPress\WordPress;
+namespace Dot\WordPress;
 
 !defined( 'WPINC ' ) or die;
 
 /**
  * Add extra layer for WordPress functions
  *
- * @package    BingoPress
- * @subpackage BingoPress\WordPress
+ * @package    Dot
+ * @subpackage Dot\WordPress
  */
 
 class Helper {

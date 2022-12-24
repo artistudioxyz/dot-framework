@@ -1,14 +1,14 @@
 <?php
 
-namespace BingoPress\Feature;
+namespace Dot\Feature;
 
 ! defined( 'WPINC ' ) or die;
 
 /**
  * Initiate framework
  *
- * @package    BingoPress
- * @subpackage BingoPress\Includes
+ * @package    Dot
+ * @subpackage Dot\Includes
  */
 
 class Feature {
@@ -55,7 +55,7 @@ class Feature {
 	 * @var    object   $theme     Feature configuration
 	 * @pattern prototype
 	 */
-	public function __construct( \BingoPress\Theme $theme ) {
+	public function __construct( \Dot\Theme $theme ) {
 		$this->options            = (object) array();
 		$this->params             = (object) array();
 		$this->hide_on_production = false;

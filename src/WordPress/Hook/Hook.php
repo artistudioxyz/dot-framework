@@ -1,14 +1,14 @@
 <?php
 
-namespace BingoPress\WordPress\Hook;
+namespace Dot\WordPress\Hook;
 
 ! defined( 'WPINC ' ) || die;
 
 /**
  * WordPress parent hook for (Action, Filter, and Shortcode)
  *
- * @package    BingoPress
- * @subpackage BingoPress\Includes\WordPress
+ * @package    Dot
+ * @subpackage Dot\Includes\WordPress
  */
 
 abstract class Hook {
