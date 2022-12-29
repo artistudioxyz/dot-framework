@@ -10,6 +10,9 @@ vendor/
 composer.lock
 package-lock.json
 
+# Extras
+.env
+
 # OS
 *.DS_Store
 .DS_Store

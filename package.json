@@ -3,7 +3,8 @@
   "version": "0.0.5",
   "description": "a Simple WordPress Utility Library for building better Plugins and Themes.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "dotenv release-it --"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "@prettier/plugin-php": "^0.19.2",
     "@release-it/bumper": "^4.0.0",
     "@release-it/conventional-changelog": "^5.1.1",
+    "dotenv": "^16.0.3",
     "husky": "^8.0.2",
     "prettier": "^2.8.1",
     "release-it": "^15.5.1"
