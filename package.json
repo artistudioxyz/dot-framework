@@ -1,0 +1,30 @@
+{
+  "name": "dot-framework",
+  "version": "0.0.5",
+  "description": "a Simple WordPress Utility Library for building better Plugins and Themes.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artistudioxyz/dot-framework.git"
+  },
+  "author": "Agung Sundoro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artistudioxyz/dot-framework/issues"
+  },
+  "homepage": "https://github.com/artistudioxyz/dot-framework#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@release-it/bumper": "^4.0.0",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "husky": "^8.0.2",
+    "prettier": "^2.8.1",
+    "release-it": "^15.5.1"
+  },
+  "lint-staged": {
+    "src/**/*.php": "prettier --write"
+  }
+}
