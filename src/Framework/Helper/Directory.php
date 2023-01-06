@@ -33,6 +33,9 @@ trait Directory
 	 */
 	public function getDirFiles($dir, &$results = [])
 	{
+		if (!is_dir($dir)) {
+			return $results;
+		}
 		$files = scandir($dir);
 		foreach ($files as $key => $value) {
 			$path = sprintf('%s/%s', $dir, $value);

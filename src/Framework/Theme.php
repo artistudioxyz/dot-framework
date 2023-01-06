@@ -171,7 +171,6 @@ class Theme
 	public function run()
 	{
 		$this->Helper->defineConst($this);
-		$this->loadModels();
 		$this->loadFeatures();
 		$this->loadHooks('Controller');
 		$this->loadHooks('Api');
@@ -187,41 +186,6 @@ class Theme
 	public function activate()
 	{
 		$this->setDefaultOption();
-	}
-
-	/**
-	 * Load registered models
-	 *
-	 * @return  void
-	 */
-	public function loadModels()
-	{
-		$models = $this->Helper->getDirFiles(
-			$this->path['framework_path'] . 'src/Model'
-		);
-		$allow = ['.', '..', '.DS_Store', 'index.php'];
-		foreach ($models as $model) {
-			if (in_array(basename($model), $allow)) {
-				continue;
-			}
-			$name = basename($model, '.php');
-			$model = '\\Dot\\Model\\' . $name;
-			$model = new $model($this);
-			/** Build */
-			$args = $model->getArgs();
-			$args['build'] = isset($args['build']) ? $args['build'] : true;
-			if ($args['build']) {
-				$model->build();
-			}
-			/** Run Hooks */
-			$this->models[$name] = $model;
-			foreach ($model->getHooks() as $hook) {
-				$class = str_replace('Dot\\WordPress\\Hook\\', '', get_class($hook));
-				if (in_array(strtolower($class), $this->enableHooks)) {
-					$hook->run();
-				}
-			}
-		}
 	}
 
 	/**
