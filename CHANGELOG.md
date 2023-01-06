@@ -1,5 +1,12 @@
 # 📟 Changelog
 
+## [0.1.1](https://github.com/artistudioxyz/dot-framework/compare/v0.1.0...v0.1.1) (2023-01-06)
+
+
+### Bug Fixes
+
+* getdirfiles function if not exists would return error ([295d6de](https://github.com/artistudioxyz/dot-framework/commit/295d6de23abb764e49f040d8bacd3a3a527edf2f))
+
 ## [0.1.0](https://github.com/artistudioxyz/dot-framework/compare/v0.0.5...v0.1.0) (2022-12-29)
 
 
