@@ -1,5 +1,13 @@
 # 📟 Changelog
 
+## [0.1.2](https://github.com/artistudioxyz/dot-framework/compare/v0.1.1...v0.1.2) (2023-01-08)
+
+
+### Bug Fixes
+
+* remove all BINGOPRESS instance ([540cce9](https://github.com/artistudioxyz/dot-framework/commit/540cce9b851c5409705f51441d3201020db6af80))
+* wrong worfklow version ([c811d3b](https://github.com/artistudioxyz/dot-framework/commit/c811d3b3e4ed897ed31e0c7f93e028d98ecc43fd))
+
 ## [0.1.1](https://github.com/artistudioxyz/dot-framework/compare/v0.1.0...v0.1.1) (2023-01-06)
 
 
