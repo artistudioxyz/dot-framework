@@ -22,15 +22,15 @@ class Helper
 
 	/**
 	 * Define const which will be used within the framework
-	 * @param   object   $theme     WordPress theme object
+	 * @param   object   $framework     WordPress theme object
 	 * @return void
 	 */
-	public function defineConst($theme)
+	public function defineConst($framework)
 	{
-		define('DOT_NAME', $theme->getName());
-		define('DOT_VERSION', $theme->getVersion());
-		define('DOT_PRODUCTION', $theme->isProduction());
-		define('DOT_PATH', json_encode($theme->getPath()));
+		define('DOT_NAME', $framework->getName());
+		define('DOT_VERSION', $framework->getVersion());
+		define('DOT_PRODUCTION', $framework->isProduction());
+		define('DOT_PATH', json_encode($framework->getPath()));
 	}
 
 	/**

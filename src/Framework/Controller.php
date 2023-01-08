@@ -43,9 +43,11 @@ class Controller
 	public function __call($method, $arguments)
 	{
 		if (in_array($method, ['loadModel', 'loadController'])) {
-			$list = $method == 'loadModel' ? $this->Theme->getModels() : [];
+			$list = $method == 'loadModel' ? $this->Framework->getModels() : [];
 			$list =
-				$method == 'loadController' ? $this->Theme->getControllers() : $list;
+				$method == 'loadController'
+					? $this->Framework->getControllers()
+					: $list;
 			if (count($arguments) == 1) {
 				$this->{$arguments[0]} = $list[$arguments[0]];
 			}
