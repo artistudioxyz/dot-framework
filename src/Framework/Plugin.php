@@ -197,7 +197,7 @@ class Plugin
 	public function loadModels()
 	{
 		$models = $this->Helper->getDirFiles(
-			$this->path['plugin_path'] . 'src/Model'
+			$this->path['framework_path'] . 'src/Model'
 		);
 		$allow = ['.', '..', '.DS_Store', 'index.php'];
 		foreach ($models as $model) {
@@ -233,7 +233,7 @@ class Plugin
 	private function loadFeatures()
 	{
 		$features = $this->Helper->getDirFiles(
-			$this->path['plugin_path'] . 'src/Feature'
+			$this->path['framework_path'] . 'src/Feature'
 		);
 		$allow = ['.', '..', '.DS_Store', 'index.php'];
 		foreach ($features as $feature) {
@@ -262,7 +262,7 @@ class Plugin
 		$allow = ['.', '..', '.DS_Store', 'index.php'];
 		foreach (
 			$this->Helper->getDirFiles(
-				$this->path['plugin_path'] . 'src/Helper/FABModule'
+				$this->path['framework_path'] . 'src/Helper/FABModule'
 			)
 			as $module
 		) {
@@ -289,7 +289,7 @@ class Plugin
 		$allow = ['.', '..', '.DS_Store', 'index.php'];
 		foreach (
 			$this->Helper->getDirFiles(
-				$this->path['plugin_path'] . 'src/Helper/FABModule'
+				$this->path['framework_path'] . 'src/Helper/FABModule'
 			)
 			as $module
 		) {
@@ -313,7 +313,7 @@ class Plugin
 	private function loadHooks($dir)
 	{
 		$controllers = $this->Helper->getDirFiles(
-			$this->path['plugin_path'] . 'src/' . $dir
+			$this->path['framework_path'] . 'src/' . $dir
 		);
 		$allow = ['.', '..', '.DS_Store', 'index.php'];
 		foreach ($controllers as $controller) {
@@ -642,7 +642,7 @@ class Plugin
 			'upload_dir' => wp_upload_dir(),
 			'ajax_url' => get_home_url() . '/wp-admin/admin-ajax.php',
 		];
-		$path['view_path'] = $path['plugin_path'] . 'src/View/';
+		$path['view_path'] = $path['framework_path'] . 'src/View/';
 		return $path;
 	}
 }

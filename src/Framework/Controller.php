@@ -2,7 +2,7 @@
 
 namespace Dot\Controller;
 
-! defined( 'WPINC ' ) or die;
+!defined('WPINC ') or die();
 
 /**
  * Initiate framework
@@ -11,8 +11,8 @@ namespace Dot\Controller;
  * @subpackage Dot/Controller
  */
 
-class Controller {
-
+class Controller
+{
 	/**
 	 * @access   protected
 	 * @var      array    $hook    Lists of hooks to register within controller
@@ -23,14 +23,15 @@ class Controller {
 	 * Admin constructor
 	 *
 	 * @return void
-	 * @param    object $theme     Framework configuration
+	 * @param    object $framework     Framework configuration
 	 * @pattern prototype
 	 */
-	public function __construct( \Dot\Theme $theme ) {
-		$this->Theme = $theme;
-		$this->Helper = $theme->getHelper();
-		$this->WP     = $theme->getWP();
-		$this->hooks  = array();
+	public function __construct($framework)
+	{
+		$this->Framework = $framework;
+		$this->Helper = $framework->getHelper();
+		$this->WP = $framework->getWP();
+		$this->hooks = [];
 	}
 
 	/**
@@ -39,15 +40,17 @@ class Controller {
 	 * @method  loadModel           _ Load model @var string name
 	 * @method  loadController      _ Load controller @var string name
 	 */
-	public function __call( $method, $arguments ) {
-		if ( in_array( $method, array( 'loadModel', 'loadController' ) ) ) {
-			$list = ( $method == 'loadModel' ) ? $this->Theme->getModels() : array();
-			$list = ( $method == 'loadController' ) ? $this->Theme->getControllers() : $list;
-			if ( count( $arguments ) == 1 ) {
-				$this->{$arguments[0]} = $list[ $arguments[0] ];
+	public function __call($method, $arguments)
+	{
+		if (in_array($method, ['loadModel', 'loadController'])) {
+			$list = $method == 'loadModel' ? $this->Theme->getModels() : [];
+			$list =
+				$method == 'loadController' ? $this->Theme->getControllers() : $list;
+			if (count($arguments) == 1) {
+				$this->{$arguments[0]} = $list[$arguments[0]];
 			}
-			if ( count( $arguments ) == 2 ) {
-				$this->{$arguments[0]} = $list[ $arguments[1] ];
+			if (count($arguments) == 2) {
+				$this->{$arguments[0]} = $list[$arguments[1]];
 			}
 		}
 	}
@@ -55,15 +58,16 @@ class Controller {
 	/**
 	 * @return array
 	 */
-	public function getHooks() {
+	public function getHooks()
+	{
 		return $this->hooks;
 	}
 
 	/**
 	 * @param array $hooks
 	 */
-	public function setHooks( $hooks ) {
+	public function setHooks($hooks)
+	{
 		$this->hooks = $hooks;
 	}
-
 }
