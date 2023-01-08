@@ -56,14 +56,13 @@ class View
 	 *
 	 * @return void
 	 */
-	public function __construct()
+	public function __construct($framework)
 	{
-		$theme = \Dot\Theme::getInstance();
-		$this->Theme = $theme;
-		$this->Helper = method_exists($theme, 'getHelper')
-			? $theme->getHelper()
+		$this->Framework = $framework;
+		$this->Helper = method_exists($framework, 'getHelper')
+			? $framework->getHelper()
 			: '';
-		$this->WP = method_exists($theme, 'getWP') ? $theme->getWP() : '';
+		$this->WP = method_exists($framework, 'getWP') ? $framework->getWP() : '';
 		$this->data = [];
 		$this->options = [];
 	}
