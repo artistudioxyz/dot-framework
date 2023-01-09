@@ -46,17 +46,6 @@ trait Model
 	}
 
 	/**
-	 * Registers a post type.
-	 * @param   string   	Post type key
-	 * @param   array   	Array or string of arguments for registering a post type.
-	 * @return void
-	 */
-	public function register_post_type($post_type, $args = [])
-	{
-		register_post_type($post_type, $args);
-	}
-
-	/**
 	 * Determines if a meta field with the given key exists for the given object ID.
 	 */
 	public function metadata_exists(
