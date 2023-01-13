@@ -1,6 +1,6 @@
 <?php
 
-namespace Dot;
+namespace Dot\Helper;
 
 !defined('WPINC ') or die();
 
@@ -14,11 +14,11 @@ namespace Dot;
 class Helper
 {
 	/** Load Trait */
-	use Helper\File;
-	use Helper\Directory;
-	use Helper\Text;
-	use Helper\Option;
-	use Helper\Plan;
+	use File;
+	use Directory;
+	use Text;
+	use Option;
+	use Plan;
 
 	/**
 	 * Define const which will be used within the framework

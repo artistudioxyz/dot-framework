@@ -42,10 +42,10 @@ class Type extends Model
 	/**
 	 * Metadata constructor
 	 */
-	public function __construct(\Dot\Theme $theme)
+	public function __construct($framework)
 	{
 		$this->WP = new \Dot\WordPress\Helper();
-		$this->Theme = $theme;
+		$this->Framework = $framework;
 	}
 
 	/**
@@ -91,7 +91,7 @@ class Type extends Model
 	public function build()
 	{
 		/** Load Models */
-		$action = new Action($this->Theme);
+		$action = new Action($this->Framework);
 		$action->setComponent($this);
 		$action->setHook('init');
 		$action->setCallback('build_callback');
