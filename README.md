@@ -7,6 +7,8 @@ Just another WordPress Plugin and Theme boilerplate with TailwindCSS, SASS, Bloc
   - or Include it as a dependency `composer require artistudioxyz/dot-framework`
 - Install dependencies `npm install`
 - Build assets `npx grunt`
+- Optional:
+  - Install husky : `npx husky install`
 
 ### Note - Namespace
 One of the problem when working with Plugins in WordPress is that, you can't have the same namespace across multiple plugin. e.g `Dot\WordPress`.
@@ -17,14 +19,14 @@ Introducing [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri), i
 - To refactor this framework you can run : `aspri --wp-refactor --path {pathtoproject} --from Dot --to {Projectnamespace} --type {plugin|theme}`
   - or via grunt : `grunt shell:dot_refactor` (you need to set the `{Projectnamespace}` in `Gruntfile.js`)
 
-### Note - Versions
+### Configure the framework
 
-- Please don't forget to change the version in `config.json` and `package.json` to your own version.
+- Change the version in `config.json` and `package.json` to your own version.
+- Disable GitHub release-it in `.release-it.json`
 
 ## 📟 Commands
 
 - Generate original assets from `.min` in [`assets/build`,`assets/vendor`] : `grunt shell:original_assets`
-- Install husky : `npx husky install`
 
 ## 🎉 Credits
 
