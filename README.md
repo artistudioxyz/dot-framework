@@ -70,6 +70,7 @@ who had helped provide and develop these libraries
 ## 🤖 Used by
 - [artistudioxyz/bingopress](https://github.com/artistudioxyz/bingopress)
 - [artistudioxyz/floating-awesome-button](https://github.com/artistudioxyz/floating-awesome-button)
+- [agung2001/calo](https://github.com/agung2001/wp-calo)
 - [agung2001/layar-tancap](https://github.com/agung2001/wp-layar-tancap)
 
 ## ⭐️ Support & Contribution
