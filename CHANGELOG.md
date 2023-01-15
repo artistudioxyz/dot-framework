@@ -1,5 +1,20 @@
 # 📟 Changelog
 
+## [0.2.0](https://github.com/artistudioxyz/dot-framework/compare/v0.1.2...v0.2.0) (2023-01-15)
+
+
+### Features
+
+* includes tailwindcss, svelte, wp-scripts, react, grunt ([74b0750](https://github.com/artistudioxyz/dot-framework/commit/74b0750b3ae5f9435ae02fc86b5aa9a38c37462b))
+* use psr4 instead of classmap ([b59ca74](https://github.com/artistudioxyz/dot-framework/commit/b59ca7409ff87f2141c2c8263c8803caf40ceafc))
+
+
+### Bug Fixes
+
+* framework view still using theme ([356b151](https://github.com/artistudioxyz/dot-framework/commit/356b1517f63cae84e0c6f7fad06ce15c858c3ce8))
+* remove  from src ([979cace](https://github.com/artistudioxyz/dot-framework/commit/979cace8c08bf62a0bda5d7a78b0582576d845d2))
+* remove theme instance from framework ([b9dfc40](https://github.com/artistudioxyz/dot-framework/commit/b9dfc40cda274c5a1ccd77171fb06046240ce908))
+
 ## [0.1.2](https://github.com/artistudioxyz/dot-framework/compare/v0.1.1...v0.1.2) (2023-01-08)
 
 
