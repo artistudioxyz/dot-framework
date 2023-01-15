@@ -42,9 +42,9 @@ class Customizer extends Base
 	 * @param    object   Framework configuration
 	 * @return void
 	 */
-	public function __construct($theme)
+	public function __construct($framework)
 	{
-		parent::__construct($theme);
+		parent::__construct($framework);
 		$this->panels = [];
 		$this->sections = [];
 		$this->settings = [];
