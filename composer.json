@@ -1,6 +1,6 @@
 {
     "name": "artistudioxyz/dot-framework",
-    "description": "Simple WordPress Utility Library for building better Plugins and Themes.",
+    "description": "Just another WordPress Plugin and Theme boilerplate with TailwindCSS, SASS, Blocks, ESLint, Prettier, and more.",
     "license" : "GPL-3.0",
     "autoload": {
       "psr-4": {

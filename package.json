@@ -1,7 +1,7 @@
 {
   "name": "dot-framework",
   "version": "0.1.2",
-  "description": "a Simple WordPress Utility Library for building better Plugins and Themes.",
+  "description": "Just another WordPress Plugin and Theme boilerplate with TailwindCSS, SASS, Blocks, ESLint, Prettier, and more.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "dotenv release-it --"

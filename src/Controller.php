@@ -1,6 +1,9 @@
 <?php
 
-namespace Dot\Controller;
+namespace Dot;
+
+use Dot\Controller\loadController;
+use Dot\Controller\loadModel;
 
 !defined('WPINC ') or die();
 

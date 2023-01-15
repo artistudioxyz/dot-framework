@@ -1,18 +1,18 @@
 # IDE
-.idea/
-.vscode/
+/.idea
+/.vscode
 
 # Library
-node_modules/
-vendor/
-
-# Dummy
-composer.lock
-package-lock.json
+/node_modules
+/vendor
 
 # Extras
 .env
+sniffer.txt
 
 # OS
 *.DS_Store
 .DS_Store
+
+# Builds
+/assets/build

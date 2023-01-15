@@ -1,6 +1,6 @@
 <?php
 
-namespace Dot\Model;
+namespace Dot;
 
 !defined('WPINC ') or die();
 
@@ -11,6 +11,8 @@ namespace Dot\Model;
  * @subpackage Dot/Model
  */
 
+use Dot\Model\loadController;
+use Dot\Model\loadModel;
 use Dot\WordPress\Model\Type;
 
 class Model extends Type
