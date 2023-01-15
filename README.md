@@ -1,14 +1,20 @@
-# 🟣 DOT Framework
+# 🍱 DOT Framework
 
 Just another WordPress Plugin and Theme boilerplate with TailwindCSS, SASS, Blocks, ESLint, Prettier, and more.
+
+<p>
+	<img src="https://img.shields.io/github/last-commit/artistudioxyz/dot-framework" alt="Last Commit">
+	<img src="https://img.shields.io/github/languages/code-size/artistudioxyz/dot-framework" alt="Code Size">
+	<img src="https://img.shields.io/github/v/tag/artistudioxyz/dot-framework" alt="Latest Tag">
+	<img src="https://github.com/artistudioxyz/dot-framework/actions/workflows/workflow.yml/badge.svg" alt="Build Status">
+	<img src="https://img.shields.io/github/stars/artistudioxyz/dot-framework?style=social" alt="Stars">
+</p>
 
 ## 📝 Installation
 - Create a new project `composer create-project artistudioxyz/dot-framework {projectname}`
   - or Include it as a dependency `composer require artistudioxyz/dot-framework`
 - Install dependencies `npm install`
 - Build assets `npx grunt`
-- Optional:
-  - Install husky : `npx husky install`
 
 ### Note - Namespace
 One of the problem when working with Plugins in WordPress is that, you can't have the same namespace across multiple plugin. e.g `Dot\WordPress`.
@@ -21,6 +27,7 @@ Introducing [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri), i
 
 ### Configure the framework
 
+- Install husky : `npx husky install`
 - Change the version in `config.json` and `package.json` to your own version.
 - Disable GitHub release-it in `.release-it.json`
 
