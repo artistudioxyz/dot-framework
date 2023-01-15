@@ -25,7 +25,7 @@ class Model extends Type
 	{
 		$this->name = substr(strrchr(get_called_class(), '\\'), 1);
 		$this->name = strtolower($this->name);
-		$this->Theme = $framework;
+		$this->Framework = $framework;
 		$this->Helper = $framework->getHelper();
 		$this->WP = $framework->getWP();
 		$this->taxonomies = [];

@@ -1,8 +1,8 @@
 <?php
 
-namespace Dot\WordPress;
+namespace Dot\WordPress\Helper;
 
-!defined( 'WPINC ' ) or die;
+!defined('WPINC ') or die();
 
 /**
  * Add extra layer for WordPress functions
@@ -11,17 +11,16 @@ namespace Dot\WordPress;
  * @subpackage Dot\WordPress
  */
 
-class Helper {
-
-    /** Load WP Trait */
-    use Helper\API;
-    use Helper\Asset;
-    use Helper\Model;
-    use Helper\Option;
-    use Helper\Page;
-    use Helper\Shortcode;
-    use Helper\Template;
-    use Helper\Validate;
-    use Helper\User;
-
+class Helper
+{
+	/** Load WP Trait */
+	use API;
+	use Asset;
+	use Model;
+	use Option;
+	use Page;
+	use Shortcode;
+	use Template;
+	use Validate;
+	use User;
 }
