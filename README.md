@@ -28,7 +28,7 @@ This framework is heavily using these free & open-source libraries
 all the credits go to these peoples and communities
 who had helped provide and develop these libraries
 
-- [Commitlint](https://commitlint.js.org/)
+- [Commit Lint](https://commitlint.js.org/)
 - [Composer](https://getcomposer.org/)
 - [Conventionnal Commit](https://www.conventionalcommits.org/en/v1.0.0/)
 - [ESLint](https://eslint.org/)
