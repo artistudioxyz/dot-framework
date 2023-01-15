@@ -8,7 +8,7 @@ Just another WordPress Plugin and Theme boilerplate with TailwindCSS, SASS, Bloc
 - Install dependencies `npm install`
 - Build assets `npx grunt`
 
-### Note
+### Note - Namespace
 One of the problem when working with Plugins in WordPress is that, you can't have the same namespace across multiple plugin. e.g `Dot\WordPress`.
 Luckily there is a solution for that, you need to refactor the framework to use your project namespace,
 but this process can be a tedious, because you'll need to refactor the namespace, setting, and configuration across multiple files.
@@ -16,6 +16,10 @@ but this process can be a tedious, because you'll need to refactor the namespace
 Introducing [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri), it is a simple library written in Go to help you refactor this framework and make it your own.
 - To refactor this framework you can run : `aspri --wp-refactor --path {pathtoproject} --from Dot --to {Projectnamespace} --type {plugin|theme}`
   - or via grunt : `grunt shell:dot_refactor` (you need to set the `{Projectnamespace}` in `Gruntfile.js`)
+
+### Note - Versions
+
+- Please don't forget to change the version in `config.json` and `package.json` to your own version.
 
 ## 📟 Commands
 

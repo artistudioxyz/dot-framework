@@ -10,6 +10,9 @@
     "publish": false
   },
   "plugins": {
+    "@release-it/bumper": {
+      "out": ["config.json"]
+    },
     "@release-it/conventional-changelog": {
       "header": "# 📟 Changelog",
       "infile": "CHANGELOG.md",
