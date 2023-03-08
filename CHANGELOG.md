@@ -1,5 +1,12 @@
 # 📟 Changelog
 
+## [0.2.2](https://github.com/artistudioxyz/dot-framework/compare/v0.2.1...v0.2.2) (2023-03-08)
+
+
+### Bug Fixes
+
+* path with space cant generate originalassets ([e54c244](https://github.com/artistudioxyz/dot-framework/commit/e54c244e1a58a66c162a88d3f079dec0231e917d))
+
 ## [0.2.1](https://github.com/artistudioxyz/dot-framework/compare/v0.2.0...v0.2.1) (2023-03-08)
 
 

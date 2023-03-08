@@ -1,6 +1,6 @@
 {
   "name": "dot-framework",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Just another WordPress Plugin and Theme boilerplate with TailwindCSS, SASS, Blocks, ESLint, Prettier, and more.",
   "scripts": {
     "build:wp": "wp-scripts build",
