@@ -1,5 +1,12 @@
 # 📟 Changelog
 
+## [0.2.3](https://github.com/artistudioxyz/dot-framework/compare/v0.2.2...v0.2.3) (2023-03-08)
+
+
+### Bug Fixes
+
+* config missing some settings ([7cf6a60](https://github.com/artistudioxyz/dot-framework/commit/7cf6a60e632e5eaeecdd9f706be0f6788b5608ad))
+
 ## [0.2.2](https://github.com/artistudioxyz/dot-framework/compare/v0.2.1...v0.2.2) (2023-03-08)
 
 
