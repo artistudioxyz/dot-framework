@@ -11,14 +11,21 @@ Just another WordPress Plugin and Theme boilerplate with TailwindCSS, SASS, Bloc
 </p>
 
 ## 📝 Installation
-- Create a new project `composer create-project artistudioxyz/dot-framework {projectname}`
-- Change directory `cd {projectname}`
+- Create a new project `composer create-project artistudioxyz/dot-framework {MyPluginorThemeName}`
+- Change directory `cd {MyPluginorThemeName}`
 - Install [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri) to your system
-- Refactor this framework by running : `aspri --wp-refactor --path "path/to/project" --from Dot --to MyProjectNameSpace --type plugin`
+- Refactor this framework by running : `aspri --wp-refactor --path "path/to/project" --from Dot --to {MyPluginorThemeName} --type {plugin or theme}`
 - Install dependencies `npm install`
 - Build assets `npx grunt`
+- Composer update `composer update`
+- Create WordPress file
+  - For plugin, please create `MyPluginorThemeName.php`, for reference please see [Calo.php](https://github.com/agung2001/wp-calo/blob/develop/calo.php)
+  - For theme, please create (`functions.php`, `style.css`), for reference please see [functions.php](https://github.com/artistudioxyz/bingopress/blob/main/functions.php), [style.css](https://github.com/artistudioxyz/bingopress/blob/main/style.css)
+  - to learn more please see [WordPress Theme Handbook](https://developer.wordpress.org/themes/getting-started/)
+- Activate the plugin in WordPress
 
 ## 🛠️ About [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri)
+
 One of the problem when working with Plugins in WordPress is that, you can't have the same namespace across multiple plugin. e.g `Dot\WordPress`.
 Luckily there is a solution for that, introducing [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri),
 a simple library written in Go to help you refactor this framework and make it your own.
@@ -57,10 +64,14 @@ who had helped provide and develop these libraries
 - [WPCS](https://github.com/WordPress/WordPress-Coding-Standards)
 
 ## 🤖 Used by
-- [artistudioxyz/bingopress](https://github.com/artistudioxyz/bingopress)
+
+Plugin :
 - [artistudioxyz/floating-awesome-button](https://github.com/artistudioxyz/floating-awesome-button)
 - [agung2001/calo](https://github.com/agung2001/wp-calo)
 - [agung2001/layar-tancap](https://github.com/agung2001/wp-layar-tancap)
+
+Theme :
+- [artistudioxyz/bingopress](https://github.com/artistudioxyz/bingopress)
 
 ## ⭐️ Support & Contribution
 - Help support me by giving a 🌟 or [donate][website]
