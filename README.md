@@ -18,10 +18,9 @@ Just another WordPress Plugin and Theme boilerplate with TailwindCSS, SASS, Bloc
 - Install dependencies `npm install`
 - Build assets `npx grunt`
 - Composer update `composer update`
-- Create WordPress file
-  - For plugin, please create `MyPluginorThemeName.php`, for reference please see [Calo.php](https://github.com/agung2001/wp-calo/blob/develop/calo.php)
+- Create WordPress file, to learn more please see : [WordPress Plugin Handbook](https://developer.wordpress.org/plugins/) or [WordPress Theme Handbook](https://developer.wordpress.org/themes/getting-started/)
+  - For plugin, please create `mypluginorthemename.php`, for reference please see [calo.php](https://github.com/agung2001/wp-calo/blob/develop/calo.php)
   - For theme, please create (`functions.php`, `style.css`), for reference please see [functions.php](https://github.com/artistudioxyz/bingopress/blob/main/functions.php), [style.css](https://github.com/artistudioxyz/bingopress/blob/main/style.css)
-  - to learn more please see [WordPress Theme Handbook](https://developer.wordpress.org/themes/getting-started/)
 - Activate the plugin in WordPress
 
 ## 🛠️ About [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri)
