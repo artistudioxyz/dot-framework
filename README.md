@@ -13,27 +13,25 @@ Just another WordPress Plugin and Theme boilerplate with TailwindCSS, SASS, Bloc
 ## 📝 Installation
 - Create a new project `composer create-project artistudioxyz/dot-framework {projectname}`
   - or Include it as a dependency `composer require artistudioxyz/dot-framework`
+- Install [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri) to your system
+- Refactor this framework by running : `aspri --wp-refactor --path "path/to/project" --from Dot --to MyProjectNameSpace --type plugin`
 - Install dependencies `npm install`
 - Build assets `npx grunt`
 
-### Note - Namespace
+## 🛠️ About [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri)
 One of the problem when working with Plugins in WordPress is that, you can't have the same namespace across multiple plugin. e.g `Dot\WordPress`.
-Luckily there is a solution for that, you need to refactor the framework to use your project namespace,
-but this process can be a tedious, because you'll need to refactor the namespace, setting, and configuration across multiple files.
+Luckily there is a solution for that, introducing [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri),
+a simple library written in Go to help you refactor this framework and make it your own.
 
-Introducing [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri), it is a simple library written in Go to help you refactor this framework and make it your own.
 - To refactor this framework you can run : `aspri --wp-refactor --path {pathtoproject} --from Dot --to {Projectnamespace} --type {plugin|theme}`
-  - or via grunt : `grunt shell:dot_refactor` (you need to set the `{Projectnamespace}` in `Gruntfile.js`)
+	- or via grunt : `grunt shell:dot_refactor` (you need to set the `{Projectnamespace}` in `Gruntfile.js`)
 
-### Configure the framework
+## ⚙️ Configuration
 
-- Install husky : `npx husky install`
-- Change the version in `config.json` and `package.json` to your own version.
-- Disable GitHub release-it in `.release-it.json`
-
-## 📟 Commands
-
-- Generate original assets from `.min` in [`assets/build`,`assets/vendor`] : `grunt shell:original_assets`
+- (Optional) If you use in your project, you can install it by running command : `npx husky install`
+- (Optional) Change the version in `config.json` and `package.json` to your own version ex. `1.0.0`.
+- (Optional) Disable GitHub release-it in `.release-it.json`
+- (Optional) to generate original assets from `.min` in [`assets/build`,`assets/vendor`] : `grunt shell:original_assets`
 
 ## 🎉 Credits
 
