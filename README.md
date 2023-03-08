@@ -12,7 +12,7 @@ Just another WordPress Plugin and Theme boilerplate with TailwindCSS, SASS, Bloc
 
 ## 📝 Installation
 - Create a new project `composer create-project artistudioxyz/dot-framework {projectname}`
-  - or Include it as a dependency `composer require artistudioxyz/dot-framework`
+- Change directory `cd {projectname}`
 - Install [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri) to your system
 - Refactor this framework by running : `aspri --wp-refactor --path "path/to/project" --from Dot --to MyProjectNameSpace --type plugin`
 - Install dependencies `npm install`
