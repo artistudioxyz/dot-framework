@@ -45,7 +45,7 @@ originalassets.map((directoryPath) => {
 				console.log(`✅ ${filename} successfully copied!`);
 
 				/** Do Prettier */
-				exec(`npx prettier --write ${f.replace('.min','')}`, (error, stdout, stderr) => {
+				exec(`npx prettier --write "${f.replace('.min','')}"`, (error, stdout, stderr) => {
 					if (error) {
 						console.error(`exec error: ${error}`);
 						return;
