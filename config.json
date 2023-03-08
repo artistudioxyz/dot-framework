@@ -3,5 +3,44 @@
   "version": "0.2.2",
   "production": true,
   "premium": false,
-  "description": "BingoPress Theme is simple WordPress theme built with TailwindCSS."
+  "description": "Dot Framework",
+  "enableHooks": [
+    "action",
+    "filter",
+    "shortcode"
+  ],
+  "default": {
+    "dot_animation": {
+      "enable": 1,
+      "elements": {
+        "logo": "bounceIn",
+        "tab": "heartBeat",
+        "content": "fadeIn",
+        "dot_active": "fadeIn",
+        "dot_inactive": "fadeOut"
+      }
+    },
+    "dot_assets": {
+      "backend": {
+        "dot-fontawesome-css": {
+          "status": true,
+          "type": "css",
+          "src": "vendor/fontawesome/css/all.min.css"
+        }
+      },
+      "frontend": {
+        "dot-chart-js": {
+          "status": true,
+          "type": "js",
+          "src": "vendor/chartjs/chart.js"
+        },
+        "dot-fontawesome-css": {
+          "status": true,
+          "type": "css",
+          "src": "vendor/fontawesome/css/all.min.css"
+        }
+      }
+    },
+    "dot_hooks": []
+  }
 }

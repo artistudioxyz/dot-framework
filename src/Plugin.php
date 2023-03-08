@@ -132,11 +132,10 @@ class Plugin
 		$this->controllers = [];
 		$this->features = [];
 		$this->models = [];
-		$this->Helper = new Helper();
-		$this->Form = new Form();
-		$this->WP = new \Dot\WordPress\Helper();
+		$this->Helper = new Helper\Helper();
+		$this->WP = new \Dot\WordPress\Helper\Helper();
 		/** Init Config */
-		$this->config->path = explode('/', dirname(__DIR__, 5));
+		$this->config->path = explode('/', dirname(__DIR__, 1));
 		$this->config->path =
 			implode('/', $this->config->path) .
 			'/' .
@@ -154,7 +153,7 @@ class Plugin
 	 */
 	public function getPluginConfig()
 	{
-		$config = dirname(__DIR__, 5);
+		$config = dirname(__DIR__, 1);
 		$config = file_get_contents($config . '/config.json');
 		$config = json_decode($config);
 		return $config;
