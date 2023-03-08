@@ -1,5 +1,12 @@
 # 📟 Changelog
 
+## [0.2.1](https://github.com/artistudioxyz/dot-framework/compare/v0.2.0...v0.2.1) (2023-03-08)
+
+
+### Bug Fixes
+
+* package deprecated ([faef5c6](https://github.com/artistudioxyz/dot-framework/commit/faef5c67dc771c832803dcd26bfcea27139f1102))
+
 ## [0.2.0](https://github.com/artistudioxyz/dot-framework/compare/v0.1.2...v0.2.0) (2023-01-15)
 
 
