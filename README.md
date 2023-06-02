@@ -34,10 +34,11 @@ a simple library written in Go to help you refactor this framework and make it y
 
 ## ⚙️ Configuration
 
-- (Optional) If you use in your project, you can install it by running command : `npx husky install`
-- (Optional) Change the version in `config.json` and `package.json` to your own version ex. `1.0.0`.
-- (Optional) Disable GitHub release-it in `.release-it.json`
-- (Optional) to generate original assets from `.min` in [`assets/build`,`assets/vendor`] : `grunt shell:original_assets`
+Optional configuration :
+- If you use in your project, you can install it by running command : `npx husky install`
+- Change the version in `config.json` and `package.json` to your own version ex. `1.0.0`.
+- Disable GitHub release-it in `.release-it.json`
+- to generate original assets from `.min` in [`assets/build`,`assets/vendor`] : `grunt shell:original_assets`
 
 ## 🎉 Credits
 
