@@ -14,14 +14,14 @@ Just another WordPress Plugin and Theme boilerplate with TailwindCSS, SASS, Bloc
 - Create a new project `composer create-project artistudioxyz/dot-framework {MyPluginorThemeName}`
 - Change directory `cd {MyPluginorThemeName}`
 - Install [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri) to your system
-- Refactor this framework by running : `aspri --wp-refactor --path "path/to/project" --from Dot --to {MyPluginorThemeName} --type {plugin or theme}`
+- Refactor this framework by running : `aspri --wp-refactor --from Dot --to {MyPluginorThemeName} --type {plugin or theme}`
 - Install dependencies `npm install`
 - Build assets `npx grunt`
 - Composer update `composer update`
 - Create WordPress file, to learn more please see : [WordPress Plugin Handbook](https://developer.wordpress.org/plugins/) or [WordPress Theme Handbook](https://developer.wordpress.org/themes/getting-started/)
-  - For plugin, please create `mypluginorthemename.php`, for reference please see [calo.php](https://github.com/agung2001/wp-calo/blob/develop/calo.php)
+  - For plugin, please create `mypluginname.php`, for reference please see [calo.php](https://github.com/agung2001/wp-calo/blob/develop/calo.php)
   - For theme, please create (`functions.php`, `style.css`), for reference please see [functions.php](https://github.com/artistudioxyz/bingopress/blob/main/functions.php), [style.css](https://github.com/artistudioxyz/bingopress/blob/main/style.css)
-- Activate the plugin in WordPress
+- Activate the plugin/theme in WordPress
 
 ## 🛠️ About [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri)
 
