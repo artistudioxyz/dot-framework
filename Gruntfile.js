@@ -67,7 +67,7 @@ module.exports = function (grunt) {
 				livereload: false,
 			},
 			blocks: (() => { /** WordPress Blocks and Shortcodes (React JS) */
-				let watcher = {};
+				let watcher = { files: [] };
 				componentConfig.map((b) => {
 					let FilesTasks = {
 						files: [
@@ -81,7 +81,7 @@ module.exports = function (grunt) {
 				return watcher;
 			})(),
 			components: (() => { /** Svelte Components */
-				let watcher = {};
+				let watcher = { files: [] };
 				componentConfig.map((c) => {
 					let FilesTasks = {
 						files: [
