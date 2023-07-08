@@ -1,5 +1,15 @@
 # 📟 Changelog
 
+## [0.2.4](https://github.com/artistudioxyz/dot-framework/compare/v0.2.3...v0.2.4) (2023-07-08)
+
+
+### Bug Fixes
+
+* add entrypoint ([92eef73](https://github.com/artistudioxyz/dot-framework/commit/92eef73df96d23c326c5bc64b713dedb542ddfea))
+* gruntfile error ([08408ff](https://github.com/artistudioxyz/dot-framework/commit/08408fff9023a8e62b06a2cd7c9aac3002968756))
+* plugin and theme implementation ([bd71990](https://github.com/artistudioxyz/dot-framework/commit/bd71990372c601fb63468597985a100ac4a1b73c))
+* update README file ([51cdb1b](https://github.com/artistudioxyz/dot-framework/commit/51cdb1beea40beb85849caed68d98ad52f2344e3))
+
 ## [0.2.3](https://github.com/artistudioxyz/dot-framework/compare/v0.2.2...v0.2.3) (2023-03-08)
 
 
