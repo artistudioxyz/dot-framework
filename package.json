@@ -3,6 +3,7 @@
   "version": "0.2.4",
   "description": "Just another WordPress Plugin and Theme boilerplate with TailwindCSS, SASS, Blocks, ESLint, Prettier, and more.",
   "scripts": {
+    "build": "grunt run build",
     "build:wp": "wp-scripts build",
     "watch:wp": "wp-scripts start",
     "release": "dotenv release-it --",
@@ -38,6 +39,8 @@
     "eslint-plugin-svelte3": "^4.0.0",
     "grunt": "^1.4.1",
     "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-contrib-uglify-es": "github:gruntjs/grunt-contrib-uglify#harmony",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-shell": "^3.0.1",
     "husky": "^8.0.2",
@@ -55,8 +58,13 @@
     "sass": "1.57.0",
     "shelljs": "^0.8.5",
     "tailwindcss": "^2.1.2",
+    "ts-loader": "^9.2.6",
+    "tslib": "^2.0.0",
     "svelte": "^3.55.0",
-    "vite": "^4.0.0"
+    "typescript": "^4.5.4",
+    "vite": "^4.0.0",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
   },
   "lint-staged": {
     "assets/components/**/*.{js,svelte}": [

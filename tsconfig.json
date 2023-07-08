@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es3",
+    "module": "commonjs",
+    "sourceMap": false,
+    "strict": false,
+    "allowJs": true,
+    "checkJs": false,
+  }
+}
