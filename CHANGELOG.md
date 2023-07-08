@@ -1,5 +1,17 @@
 # 📟 Changelog
 
+## [0.3.0](https://github.com/artistudioxyz/dot-framework/compare/v0.2.4...v0.3.0) (2023-07-08)
+
+
+### Features
+
+* add support WP debug function ([74b4008](https://github.com/artistudioxyz/dot-framework/commit/74b40080a42d8419bc1122c63d16d009f58a1c32))
+
+
+### Bug Fixes
+
+* gruntfile build no ts config ([06e4a2c](https://github.com/artistudioxyz/dot-framework/commit/06e4a2c38345b02d2b34ab81119a6fb7f823d50a))
+
 ## [0.2.4](https://github.com/artistudioxyz/dot-framework/compare/v0.2.3...v0.2.4) (2023-07-08)
 
 
