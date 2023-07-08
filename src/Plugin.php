@@ -610,7 +610,7 @@ class Plugin
 	/**
 	 * @return object
 	 */
-	public function getWP(): WordPress\Helper
+	public function getWP(): WordPress\Helper\Helper
 	{
 		return $this->WP;
 	}
@@ -618,7 +618,7 @@ class Plugin
 	/**
 	 * @param object $WP
 	 */
-	public function setWP(WordPress\Helper $WP): void
+	public function setWP(WordPress\Helper\Helper $WP): void
 	{
 		$this->WP = $WP;
 	}
