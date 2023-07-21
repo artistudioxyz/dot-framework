@@ -80,20 +80,23 @@ class View
 	}
 
 	/**
-	 * Helper to load content
+	 * Load view template
 	 *
-	 * @backend
-	 * @return  content
+	 * @param  string  $path  View path
+	 *
+	 * @return void
 	 */
-	public function loadContent($content, $args = [])
+	public function loadContent($path)
 	{
 		extract($this->data);
-		$path = json_decode(DOT_PATH);
-		require sprintf(
+		$view_path = sprintf(
 			'%s%s.php',
-			$path->view_path,
-			str_replace('.', '/', $content)
+			json_decode(DOT_PATH)->view_path,
+			str_replace('.', '/', $path)
 		);
+		if (file_exists($view_path)) {
+			require $view_path;
+		}
 	}
 
 	/**
@@ -241,5 +244,26 @@ class View
 	public function setOptions($options)
 	{
 		$this->options = $options;
+	}
+
+	/**
+	 * Static View Render
+	 *
+	 * @param string $path
+	 * @param array $data
+	 */
+	public static function render($path, $data = [])
+	{
+		if (!empty($data)) {
+			extract($data);
+		}
+		$view_path = sprintf(
+			'%s%s.php',
+			json_decode(DOT_PATH)->view_path,
+			str_replace('.', '/', $path)
+		);
+		if (file_exists($view_path)) {
+			require $view_path;
+		}
 	}
 }
