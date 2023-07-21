@@ -1,5 +1,12 @@
 # 📟 Changelog
 
+## [0.5.0](https://github.com/artistudioxyz/dot-framework/compare/v0.4.0...v0.5.0) (2023-07-21)
+
+
+### Features
+
+* add documentations index to README file ([92bad8a](https://github.com/artistudioxyz/dot-framework/commit/92bad8a4400c8ae990dabd538a6c9713358af83f))
+
 ## [0.4.0](https://github.com/artistudioxyz/dot-framework/compare/v0.3.0...v0.4.0) (2023-07-21)
 
 
