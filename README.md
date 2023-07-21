@@ -15,6 +15,7 @@ Embrace this versatile framework to enhance productivity, ensure code consistenc
 </p>
 
 ## 🚀 Installation
+
 - Create a new project `composer create-project artistudioxyz/dot-framework {MyPluginorThemeName}`
 - Change directory `cd {MyPluginorThemeName}`
 - Install [Aspri (Asisten Pribadi)](https://github.com/artistudioxyz/aspri) to your system
