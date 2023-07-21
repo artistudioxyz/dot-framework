@@ -1,5 +1,13 @@
 # 📟 Changelog
 
+## [0.4.0](https://github.com/artistudioxyz/dot-framework/compare/v0.3.0...v0.4.0) (2023-07-21)
+
+
+### Features
+
+* add API base class ([8f51cef](https://github.com/artistudioxyz/dot-framework/commit/8f51cef7ad31f9cfdc8f669b35b6b2c277517393))
+* add view static render function ([658d010](https://github.com/artistudioxyz/dot-framework/commit/658d010cc42cedebe9d8339f79e99ec693fc11ff))
+
 ## [0.3.0](https://github.com/artistudioxyz/dot-framework/compare/v0.2.4...v0.3.0) (2023-07-08)
 
 
