@@ -5,12 +5,13 @@ namespace Dot;
 !defined('WPINC ') || die();
 
 /**
- * Initiate plugins
+ * Plugin
+ *
+ * @since 0.3.0
  *
  * @package    Dot
- * @subpackage Dot\Includes
+ * @subpackage Dot/Controller
  */
-
 class Plugin
 {
 	/**

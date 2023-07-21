@@ -10,40 +10,8 @@ namespace Dot\WordPress\Helper;
  * @package    Dot
  * @subpackage Dot\WordPress
  */
-
 trait Asset
 {
-	/**
-	 * WordPressEnqueue Media - for custom wp_editor
-	 *
-	 * @return  void
-	 */
-	public function wp_enqueue_media()
-	{
-		wp_enqueue_media();
-	}
-
-	/**
-	 * WordPress Includes URL - Retrieves the URL to the includes directory.
-	 *
-	 * @var     string      $path   Path relative to the includes URL.
-	 * @var     string      $scheme   Scheme to give the includes URL context. Accepts 'http', 'https', or 'relative'.
-	 * @return  string
-	 */
-	public function includes_url($path = '', $scheme = null)
-	{
-		return includes_url($path, $scheme);
-	}
-
-	/*** Localize a script */
-	public function wp_localize_script(
-		string $handle,
-		string $object_name,
-		array $l10n
-	) {
-		wp_localize_script($handle, $object_name, $l10n);
-	}
-
 	/**
 	 * WordPress enqueue style
 	 *
@@ -105,7 +73,7 @@ trait Asset
 	}
 
 	/**
-	 * Enqueue assets at frontend
+	 * Enqueue assets
 	 */
 	public function enqueue_assets($assets)
 	{

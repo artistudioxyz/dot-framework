@@ -8,12 +8,11 @@ namespace Dot\Helper;
  * Helper library for Dot framework
  *
  * @package    Dot
- * @subpackage Dot\Includes
+ * @subpackage Dot\Helper
  */
-
 class Helper
 {
-	/** Load Trait */
+	// Load Traits.
 	use File;
 	use Directory;
 	use Text;
@@ -31,19 +30,6 @@ class Helper
 		define('DOT_VERSION', $framework->getVersion());
 		define('DOT_PRODUCTION', $framework->isProduction());
 		define('DOT_PATH', json_encode($framework->getPath()));
-	}
-
-	/**
-	 * Convert html relative path into absolute path
-	 * @var     string  $path   WordPress base path
-	 * @var     string  $html   Html string
-	 * @return  void
-	 */
-	public function convertImagesRelativetoAbsolutePath($path, $html)
-	{
-		$pattern = '/<img([^>]*) ' . "src=\"([^http|ftp|https][^\"]*)\"/";
-		$replace = "<img\${1} src=\"" . $path . "\${2}\"";
-		return preg_replace($pattern, $replace, $html);
 	}
 
 	/**

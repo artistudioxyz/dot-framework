@@ -2,18 +2,14 @@
 
 namespace Dot;
 
-use Dot\Controller\loadController;
-use Dot\Controller\loadModel;
-
 !defined('WPINC ') or die();
 
 /**
- * Initiate framework
+ * Controller
  *
  * @package    Dot
  * @subpackage Dot/Controller
  */
-
 class Controller
 {
 	/**
