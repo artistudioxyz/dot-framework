@@ -91,6 +91,8 @@ who had helped provide and develop these libraries
   - [artistudioxyz/bingopress](https://github.com/artistudioxyz/bingopress)
 
 ## ⭐️ Support & Contribution
+
 - Help support me by giving a 🌟 or [donate][website]
+- Or you can read [CONTRIBUTING.md](CONTRIBUTING.md)
 
 [website]: https://agung2001.github.io
