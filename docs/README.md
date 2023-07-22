@@ -1,6 +1,6 @@
 # 🍱 DOT Framework - Documentation
 
-![](https://brain.artistudio.xyz/vaults/WordPress-dot-framework/cover.jpg)
+![](https://brain.artistudio.xyz/vaults/WordPress-dot-framework/stack.jpg)
 
 Dot Framework is a powerful PHP framework designed to expedite WordPress plugin and theme development. By integrating cutting-edge technologies such as TailwindCSS, SASS, Blocks, ESLint, Prettier, and more.
 
