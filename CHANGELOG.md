@@ -1,5 +1,12 @@
 # 📟 Changelog
 
+## [0.5.2](https://github.com/artistudioxyz/dot-framework/compare/v0.5.1...v0.5.2) (2023-07-22)
+
+
+### Bug Fixes
+
+* concept docs some of dont have a link ([c993def](https://github.com/artistudioxyz/dot-framework/commit/c993def1db7cfffafe10225ca0c3aa0b872afd2d))
+
 ## [0.5.1](https://github.com/artistudioxyz/dot-framework/compare/v0.5.0...v0.5.1) (2023-07-21)
 
 ## [0.5.0](https://github.com/artistudioxyz/dot-framework/compare/v0.4.0...v0.5.0) (2023-07-21)
