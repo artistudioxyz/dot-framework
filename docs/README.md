@@ -8,13 +8,6 @@ it empowers developers to create feature-rich and visually appealing solutions e
 
 Embrace this versatile framework to enhance productivity, ensure code consistency, and deliver exceptional user experiences within the vibrant WordPress ecosystem. Simplify development and elevate your projects with Dot Framework's comprehensive toolset.
 
-<p>
-	<img src="https://img.shields.io/github/last-commit/artistudioxyz/dot-framework-docs" alt="Last Commit">
-	<img src="https://img.shields.io/github/languages/code-size/artistudioxyz/dot-framework-docs" alt="Code Size">
-	<img src="https://img.shields.io/github/v/tag/artistudioxyz/dot-framework-docs" alt="Latest Tag">
-	<img src="https://img.shields.io/github/stars/artistudioxyz/dot-framework-docs?style=social" alt="Stars">
-</p>
-
 ## Index
 
 - 1 - Getting Started
