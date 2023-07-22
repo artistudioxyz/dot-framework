@@ -11,7 +11,7 @@ Model View Controller (MVC) is a software design pattern that separates the prog
 WordPress does not specifically implement MVC, because it is not a framework, but a CMS. However, it is possible to implement it in WordPress.
 One thing to note is that WordPress is a bit strict with their development workflow, so it is not possible to implement MVC in a conventional way.
 
-We don't want to create our own system that is not compatible with WordPress. 
+We don't want to create our own system that is not compatible with WordPress.
 What we want is to create a system that is compatible so that it can be used in the long run.
 
 That is why this framework implements MVC in this way:
@@ -72,7 +72,7 @@ use Dot\WordPress\Model\Type;
  * @package    Dot
  * @subpackage Dot/Model
  */
-class Dot extends Type { 
+class Dot extends Type {
 	/**
 	 * Constructor
 	 *
@@ -84,27 +84,54 @@ class Dot extends Type {
         parent::__construct( $framework );
 
 		/**
-         * Register Post Type 
+         * Register Post Type
          * - TODO: You can define the arguments of the post type here.
          * - TODO: If you set `build` argument to false, the post type won't be registered. The default is set to true.
          */
-        $this->args['build'] = false; 
+        $this->args['build'] = false;
 
         /** TODO: This is where you register the hooks */
 	}
 }
 ```
 
+### Custom Post Type
+
+In dot framework, you can create a custom post type by using `Dot\WordPress\Model\Type` class.
+By inheriting this class, the custom post type will be automatically registered.
+But if you don't wish to create a custom post type, you can set `build` argument to false.
+
+### Taxonomy
+
+In dot framework, you can create a taxonomy by using `Dot\WordPress\Model\Taxonomy` class.
+Here are examples of how to implement a taxonomy in this framework.
+```php
+$taxonomy = new Taxonomy();
+$taxonomy->setName('dot_category');
+$taxonomy->setArgs(array(
+	'hierarchical' => false,
+	'labels' => array(
+		'name' => 'Categories',
+		'singular_name' => 'Category'
+	),
+	'show_ui' => true,
+	'show_admin_column' => true,
+	'show_in_rest' => true,
+	'rewrite' => array('slug' => 'dot_category'),
+	'default_term' => array(
+		'name' => 'Uncategorized',
+		'slug' => 'uncategorized',
+		'description' => '',
+	),
+));
+$this->setTaxonomies( array( $taxonomy ) );
+```
+
 ## View
 
 The View is not a class, but a folder or files inside it.
 It's just an implementation of custom pages, components, templates, or widgets.
-
-Firstly, before using the View class, you need to import the class.
-or you can use the View class directly by using the namespace `Dot\View`.
-```php
-use Dot\View;
-```
+You can create view by using `Dot\View` class.
 
 You can render view statically by using `View::render()` method.
 ```php
