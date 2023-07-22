@@ -104,7 +104,7 @@ But if you don't wish to create a custom post type, you can set `build` argument
 ### Taxonomy
 
 In dot framework, you can create a taxonomy by using `Dot\WordPress\Model\Taxonomy` class.
-Here are examples of how to implement a taxonomy in this framework.
+You can put taxonomy code below inside `__construct` method of your model class to register it.
 ```php
 $taxonomy = new Taxonomy();
 $taxonomy->setName('dot_category');
