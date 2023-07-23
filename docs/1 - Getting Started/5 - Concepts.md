@@ -12,4 +12,5 @@ Here are lists of programming concepts that are implemented in the framework:
 	- [Object-oriented programming (OOP)](https://brain.artistudio.xyz/knowledge/technical/research/terms-concepts/programming/object-oriented-programming-oop-.md)
     - [Traits](https://brain.artistudio.xyz/knowledge/technical/research/terms-concepts/programming/trait.md)
 - WordPress
-  - [Custom Post Type](https://brain.artistudio.xyz/knowledge/technical/research/wordpress/terms-concepts/custom-post-types-cpt-.md) **Required**
+  - [Custom Post Type](https://brain.artistudio.xyz/knowledge/technical/research/wordpress/terms-concepts/custom-post-types-cpt-.md)
+  - [Taxonomy](https://brain.artistudio.xyz/knowledge/technical/research/wordpress/terms-concepts/Taxonomy.md)
