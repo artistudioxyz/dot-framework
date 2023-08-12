@@ -55,6 +55,12 @@ class BackendPage extends Controller
 	 */
 	public function page_setting()
 	{
+		// Get Data
+		$slug = strtolower(DOT_NAME) . '-setting';
+
+		// Handle form submission.
+		$this->page_setting_submission($slug);
+
 		// Sections.
 		$sections = [];
 		$sections['Backend.about'] = ['name' => 'About', 'active' => true];
@@ -71,9 +77,22 @@ class BackendPage extends Controller
 		$page->setPageTitle(DOT_NAME);
 		$page->setMenuTitle(DOT_NAME);
 		$page->setCapability('manage_options');
-		$page->setMenuSlug(strtolower(DOT_NAME) . '-setting');
+		$page->setMenuSlug($slug);
 		$page->setFunction([$page, 'loadView']);
 		$page->setView($view);
 		$page->build();
+	}
+
+	/**
+	 * Handle Page Setting Submission
+	 * - This is where you handle the form submission.
+	 *
+	 * @param string $slug Slug of the page.
+	 */
+	public function page_setting_submission($slug)
+	{
+		if ($_POST && $_GET['page'] == $slug) {
+			// Do something here.
+		}
 	}
 }

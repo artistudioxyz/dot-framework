@@ -24,6 +24,14 @@ This will be then loaded by [Gruntfile.js](https://github.com/artistudioxyz/dot-
 To create a component, you can follow these steps:
 - cd into `assets/components` directory.
 - Run `npx degit sveltejs/template {MyProject}`
-- Because the component lives under `assets/components`, please don't forget to change the `rollup.config.js` input to : `assets/components/{MyProject}/src/main.js`
+- Because the component lives under `assets/components`, please don't forget to change some of `rollup.config.js` config
+```javascript
+export default {
+	input: 'assets/components/{MyProject}/src/main.js',
+	output: {
+		file: 'assets/build/components/{MyProject}/bundle.js'
+	},
+}
+```
 - Change Directory to project root `cd ../../`
 - Compile the component by running `grunt`

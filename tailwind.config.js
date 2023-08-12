@@ -5,7 +5,8 @@ module.exports = {
   purge: [
 	  '*.php',
 	  'template-parts/**/*.php',
-	  './src/View/**/*.php'
+	  './src/View/**/*.php',
+	  './assets/components/**/*.svelte',
   ],
   theme: {
     extend: {
