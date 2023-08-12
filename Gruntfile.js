@@ -158,8 +158,8 @@ module.exports = function (grunt) {
 	/** Component */
 	let ComponentsBuild = [];
 	componentConfig.map((c) => {
-		ComponentsBuild.push(`build-component-${c}`);
-		grunt.registerTask(`build-component-${c}`, [ `shell:rollup_component_${c}` ]);
+		ComponentsBuild.push(`build-component-${c.name}`);
+		grunt.registerTask(`build-component-${c.name}`, [ `shell:rollup_component_${c.name}` ]);
 	});
 
 	/** Typescripts using webpack */

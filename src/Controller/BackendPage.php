@@ -63,9 +63,6 @@ class BackendPage extends Controller
 		$view = new View($this->Framework);
 		$view->setTemplate('backend.default');
 		$view->setSections($sections);
-		$view->addData([
-			'background' => 'bg-alizarin',
-		]);
 		$view->setOptions(['shortcode' => false]);
 
 		// Set Page.
