@@ -39,6 +39,15 @@ class Backend extends Controller
 		$action->setMandatory(true);
 		$action->setDescription(__('Enqueue scripts in backend', 'dot'));
 		$this->hooks[] = $action;
+
+		/** @backend - Add setting link for plugin in plugins page */
+		$action = clone $action;
+		$action->setComponent($this);
+		$action->setHook('plugin_action_links_dot/dot.php');
+		$action->setCallback('backend_plugin_setting_link');
+		$action->setPriority(10);
+		$action->setAcceptedArgs(1);
+		$this->hooks[] = $action;
 	}
 
 	/**
@@ -87,5 +96,21 @@ class Backend extends Controller
 				true
 			);
 		}
+	}
+
+	/**
+	 * Add setting link in plugin page
+	 *
+	 * @var array $links Plugin links
+	 *
+	 * @return array $links
+	 */
+	public function backend_plugin_setting_link($links)
+	{
+		return array_merge($links, [
+			'<a href="options-general.php?page=' .
+			strtolower(DOT_NAME) .
+			'-setting">Settings</a>',
+		]);
 	}
 }
